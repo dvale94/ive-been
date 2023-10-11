@@ -1,7 +1,7 @@
 import axios from 'axios';
 import { ENDPOINTS } from '@/api/EndPoints';
 
-const BASE_URL = '';
+const BASE_URL = process.env.NEXT_PUBLIC_API_GATEWAY_URL;
 
 export const ApiProvider = {
   getDefaultMap: async () => {
